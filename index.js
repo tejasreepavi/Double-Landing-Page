@@ -1,8 +1,5 @@
-// Simple JavaScript to add click effect for buttons
-const buttons = document.querySelectorAll('.btn');
+const vivoImg = document.getElementById('vivoImage');
 
-buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        alert(You clicked on "${btn.parentElement.querySelector('h2').textContent}" Buy Now!);
-    });
+vivoImg.addEventListener('click', () => {
+  vivoImg.classList.toggle('zoomed');
 });
