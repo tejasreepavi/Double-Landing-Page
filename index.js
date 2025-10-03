@@ -1,20 +1,8 @@
-const containerEl = document.querySelector(".container");
+// Simple JavaScript to add click effect for buttons
+const buttons = document.querySelectorAll('.btn');
 
-const leftEl = document.querySelector(".left");
-const rightEl = document.querySelector(".right");
-
-leftEl.addEventListener("mouseenter", () => {
-  containerEl.classList.add("active-left");
-});
-
-leftEl.addEventListener("mouseleave", () => {
-  containerEl.classList.remove("active-left");
-});
-
-rightEl.addEventListener("mouseenter", () => {
-  containerEl.classList.add("active-right");
-});
-
-rightEl.addEventListener("mouseleave", () => {
-  containerEl.classList.remove("active-right");
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        alert(You clicked on "${btn.parentElement.querySelector('h2').textContent}" Buy Now!);
+    });
 });
