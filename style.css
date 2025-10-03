@@ -1,114 +1,57 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Pastel purple background */
 body {
-    font-family: 'Arial', sans-serif;
-    background: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d8b4f2; /* pastel purple */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
+h1 {
+  color: #4b0082;
+  margin-bottom: 20px;
+}
+
+/* Vivo image styling */
+.vivo-img {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Zoom effect */
+.zoomed {
+  transform: scale(2); /* double the size */
+  z-index: 1000;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Optional: smooth container transition */
 .container {
-    display: grid;
-    grid-template-columns: repeat(2, 250px);
-    grid-gap: 30px;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
-.card {
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card img {
-    width: 100%;
-    height: 150px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-.card h2 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Bright card backgrounds */
-#apple {
-    background-color: #ff4c4c; /* bright red */
-}
-
-#samsung {
-    background-color: #1e90ff; /* bright blue */
-}
-
-#oppo {
-    background-color: #32cd32; /* bright green */
-}
-
-#vivo {
-    background-color: #ff8c00; /* bright orange */
-}
-
-/* Buttons */
+/* Button styling */
 .btn {
-    padding: 12px 30px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    color: #fff;
-    transition: 0.3s;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Glowing buttons with matching bright colors */
-#apple .btn {
-    background-color: #ff6666;
-    box-shadow: 0 0 15px #ff6666, 0 0 30px #ff6666, 0 0 45px #ff6666;
-}
-
-#apple .btn:hover {
-    box-shadow: 0 0 25px #fff, 0 0 50px #fff, 0 0 75px #fff;
-}
-
-#samsung .btn {
-    background-color: #3399ff;
-    box-shadow: 0 0 15px #3399ff, 0 0 30px #3399ff, 0 0 45px #3399ff;
-}
-
-#samsung .btn:hover {
-    box-shadow: 0 0 25px #fff, 0 0 50px #fff, 0 0 75px #fff;
-}
-
-#oppo .btn {
-    background-color: #50e050;
-    box-shadow: 0 0 15px #50e050, 0 0 30px #50e050, 0 0 45px #50e050;
-}
-
-#oppo .btn:hover {
-    box-shadow: 0 0 25px #fff, 0 0 50px #fff, 0 0 75px #fff;
-}
-
-#vivo .btn {
-    background-color: #ffa500;
-    box-shadow: 0 0 15px #ffa500, 0 0 30px #ffa500, 0 0 45px #ffa500;
-}
-
-#vivo .btn:hover {
-    box-shadow: 0 0 25px #fff, 0 0 50px #fff, 0 0 75px #fff;
+.btn:hover {
+  background-color: #9d4edd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
