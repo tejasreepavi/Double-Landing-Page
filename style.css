@@ -1,57 +1,73 @@
-/* Pastel purple background */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #d8b4f2; /* pastel purple */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f9e6f7; /* pastel background */
+    color: #333;
 }
 
-h1 {
-  color: #4b0082;
-  margin-bottom: 20px;
+header {
+    text-align: center;
+    padding: 2rem 0;
+    background: #ffd6f0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Vivo image styling */
-.vivo-img {
-  width: 200px;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.brand-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    background: #ffe6f0;
+    max-width: 800px;
+    transition: background 0.3s ease;
 }
 
-/* Zoom effect */
-.zoomed {
-  transform: scale(2); /* double the size */
-  z-index: 1000;
-  position: relative;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+.brand-section:nth-child(odd) {
+    background: #f6e6ff;
 }
 
-/* Optional: smooth container transition */
-.container {
-  text-align: center;
-  padding: 20px;
+.brand-section h2 {
+    margin-bottom: 1rem;
 }
 
-/* Button styling */
-.btn {
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #7c3aed;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+.image-container {
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
-.btn:hover {
-  background-color: #9d4edd;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+.image-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Neon Button */
+.buy-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background: #39ff14;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 40px #39ff14;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buy-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 50px #39ff14;
+}
+
+/* Zoom on hover for images when hovering either image or button */
+.brand-section:hover img,
+.buy-btn:hover + .image-container img {
+    transform: scale(1.1);
 }
