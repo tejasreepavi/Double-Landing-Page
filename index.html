@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Smartphone Brands</h1>
+    </header>
 
-  <div class="container">
-    <h1>Welcome to Our Landing Page</h1>
-    <p>Click on the Vivo image to zoom!</p>
-    
-    <!-- Sample Vivo image -->
-    <img src="https://via.placeholder.com/200x400?text=Vivo+Phone" 
-         alt="Vivo Phone" 
-         class="vivo-img" id="vivoImage">
+    <section class="brand-section" id="vivo">
+        <h2>Vivo</h2>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1603898037225-2c7a7ab7b4fa?auto=format&fit=crop&w=600&q=60" alt="Vivo">
+        </div>
+        <button class="buy-btn">Buy Now</button>
+    </section>
 
-    <!-- Example buttons -->
-    <div>
-      <button class="btn">Learn More</button>
-      <button class="btn">Contact</button>
-    </div>
-  </div>
+    <section class="brand-section" id="oppo">
+        <h2>Oppo</h2>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1596301544855-20aa73a0ee1e?auto=format&fit=crop&w=600&q=60" alt="Oppo">
+        </div>
+        <button class="buy-btn">Buy Now</button>
+    </section>
 
-  <script src="script.js"></script>
+    <section class="brand-section" id="samsung">
+        <h2>Samsung</h2>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1606813903180-c0b7a0d46d07?auto=format&fit=crop&w=600&q=60" alt="Samsung">
+        </div>
+        <button class="buy-btn">Buy Now</button>
+    </section>
+
+    <section class="brand-section" id="apple">
+        <h2>Apple</h2>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1512499617640-c2f99912f42e?auto=format&fit=crop&w=600&q=60" alt="Apple">
+        </div>
+        <button class="buy-btn">Buy Now</button>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
