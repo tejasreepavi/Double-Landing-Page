@@ -1,48 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brand Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Brand Landing Page Demo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Smartphone Brands</h1>
-    </header>
 
-    <section class="brand-section" id="vivo">
-        <h2>Vivo</h2>
-        <div class="image-container">
-            <img src="https://images.unsplash.com/photo-1603898037225-2c7a7ab7b4fa?auto=format&fit=crop&w=600&q=60" alt="Vivo">
-        </div>
-        <button class="buy-btn">Buy Now</button>
-    </section>
+  <!-- Sticky Navbar for Section 1 -->
+  <nav class="navbar sticky">
+    <ul>
+      <li><a href="#section1">Home</a></li>
+      <li><a href="#section1">Vivo</a></li>
+      <li><a href="#section1">Oppo</a></li>
+      <li><a href="#section1">Samsung</a></li>
+      <li><a href="#section1">Apple</a></li>
+    </ul>
+  </nav>
 
-    <section class="brand-section" id="oppo">
-        <h2>Oppo</h2>
-        <div class="image-container">
-            <img src="https://images.unsplash.com/photo-1596301544855-20aa73a0ee1e?auto=format&fit=crop&w=600&q=60" alt="Oppo">
-        </div>
-        <button class="buy-btn">Buy Now</button>
-    </section>
+  <!-- Section 1: Horizontal Layout -->
+  <section id="section1" class="section horizontal-layout">
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Vivo_Logo.png" alt="Vivo">
+      <button>Buy Now</button>
+    </div>
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Oppo_logo.png" alt="Oppo">
+      <button>Buy Now</button>
+    </div>
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung">
+      <button>Buy Now</button>
+    </div>
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+      <button>Buy Now</button>
+    </div>
+  </section>
 
-    <section class="brand-section" id="samsung">
-        <h2>Samsung</h2>
-        <div class="image-container">
-            <img src="https://images.unsplash.com/photo-1606813903180-c0b7a0d46d07?auto=format&fit=crop&w=600&q=60" alt="Samsung">
-        </div>
-        <button class="buy-btn">Buy Now</button>
-    </section>
+  <!-- Normal Navbar for Sections 2 & 3 -->
+  <nav class="navbar normal">
+    <ul>
+      <li><a href="#section2">Home</a></li>
+      <li><a href="#section2">Vivo</a></li>
+      <li><a href="#section2">Oppo</a></li>
+      <li><a href="#section2">Samsung</a></li>
+      <li><a href="#section2">Apple</a></li>
+    </ul>
+  </nav>
 
-    <section class="brand-section" id="apple">
-        <h2>Apple</h2>
-        <div class="image-container">
-            <img src="https://images.unsplash.com/photo-1512499617640-c2f99912f42e?auto=format&fit=crop&w=600&q=60" alt="Apple">
-        </div>
-        <button class="buy-btn">Buy Now</button>
-    </section>
+  <!-- Section 2: 2x2 Grid Layout -->
+  <section id="section2" class="section grid-layout">
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Vivo_Logo.png" alt="Vivo">
+      <button>Buy Now</button>
+    </div>
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Oppo_logo.png" alt="Oppo">
+      <button>Buy Now</button>
+    </div>
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung">
+      <button>Buy Now</button>
+    </div>
+    <div class="brand-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+      <button>Buy Now</button>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Section 3: Full-Screen Scroll Sections -->
+  <section id="section3" class="section full-screen">
+    <div class="full-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Vivo_Logo.png" alt="Vivo">
+      <button>Buy Now</button>
+    </div>
+    <div class="full-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Oppo_logo.png" alt="Oppo">
+      <button>Buy Now</button>
+    </div>
+    <div class="full-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung">
+      <button>Buy Now</button>
+    </div>
+    <div class="full-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple">
+      <button>Buy Now</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
